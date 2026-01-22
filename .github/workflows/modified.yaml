@@ -21,10 +21,10 @@ jobs:
       matrix:
         include:
           # CINTENT >> REMOVE_MATRIX
-          # - environment: 'nightly'
-          #   NOTE: 'Nightly Builds' # run once with nightlies
-          - environment: 'py313'
-            NOTE: 'Python 3.13' # run once with normal dependencies
+          - environment: 'nightly'
+            NOTE: 'Nightly Builds' # run once with nightlies
+          # - environment: 'py313'
+          #   NOTE: 'Python 3.13' # run once with normal dependencies
     steps:
       - name: Checkout branch
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
